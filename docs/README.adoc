@@ -6,14 +6,15 @@
 
 // toc::[]
 
-include::requirements.adoc[]
-include::design_decisions.adoc[]
-include::architecture.adoc[]
-include::evaluation.adoc[]
+include::design/requirements.adoc[]
+include::design/design_decisions.adoc[]
+include::design/architecture.adoc[]
+// include::evaluation.adoc[]
+include::design/scenario.adoc[]
 
 == References
 
-:bibliography-database: _.bib
+:bibliography-database: bibtex.bib
 :bibliography-style: apa
 
 
