@@ -6,6 +6,9 @@
 
 // toc::[]
 
+
+Bleb bee. 
+
 include::design/requirements.adoc[]
 include::design/design_decisions.adoc[]
 include::design/architecture.adoc[]
