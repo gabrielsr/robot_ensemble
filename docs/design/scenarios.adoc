@@ -1,0 +1,12 @@
+=== Scenarios
+
+=== Service Robot mission
+
+Coordinator deployed in a central node that creates ensembles to execute missions on behalf of users. 
+
+
+
+=== Advertisement
+
+ComponentA advertise its availability for its initialized roles, which is received by
+

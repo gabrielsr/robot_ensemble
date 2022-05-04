@@ -1,0 +1,16 @@
+
+== Design Directives / Decisions
+
+In priority order:
+
+Don't be redundant with ROS2 functionality:: I.e, when possible use the abstractions already provided by ROS (e.g., process scheduling can use node machinery)
+
+Stateful Component:: ros_ensemble is a stateful component so other components do not need to. 
+
+Encapsulate low-level details about communication (e.g., protocols, used port, dds distribution):: ros_ensemble is a component that provides an ensemble collaboration mechanism on top of ROS, abstracting other nodes of multi-robot communication. 
+
+Avoid being locked to a specific ROS2 version or DDS provider:: Use standard ROS mechanism when possible, to avoid lockin to underlying mechanisms.
+
+Customizable:: the end-user must provide their own knowledge model, and algorithms to map knowledge to the input of other nodes, so this node must be customizable at the code level (e.g., a config file is not sufficient).
+
+Single thread:: Every internal process is a non-blocking process and the system operatas in a single thread. This should free ros_ensemble of the overhead of scheduling threads and avoid problems with concurrent access to the knowledge.

@@ -1,0 +1,20 @@
+= Mission Control
+:favicon: ./images/favicon.png
+:toc: left
+:toc-title: Content
+:toclevels: 3
+
+// toc::[]
+
+include::requirements.adoc[]
+include::design_decisions.adoc[]
+include::architecture.adoc[]
+include::evaluation.adoc[]
+
+== References
+
+:bibliography-database: _.bib
+:bibliography-style: apa
+
+
+bibliography::[]

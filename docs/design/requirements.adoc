@@ -1,0 +1,37 @@
+== Terminology
+
+Components:: The design and deployment unit in the ensemble. The component can represent a Robot, a charge station, a sensor, or a NODE in the cloud executing fleet management. A Component is a stateful entity, which accumulates *knowledge* about the state of the world. 
+
+Knowledge:: A set of fieds that represent state of the, component or external world relevant to the operation of the component. 
+
+Processes:: Are the computation realized by the components. Processes are stateless ROS nodes that receive as input fields of the knowledge and write fields back to the knowledge. A definition of a process has 
+    - a map of the input fields
+    - a map of output fields
+    - a scheduling scheme (i.e., when / with how frequency the process will be triggered)
+
+Ensemble:: A group of components with a common goal.
+An Ensemble has a coordinator and members. The membership of a candidate component is decided by a membership function that operates on the state of the ensemble and the candidate component. 
+An ensemble is formed dynamically and opportunistically (rather than statically by design) based on the state of the components.  
+
+Ensemble Formation:: How ensembles are formed
+- Open
+Any component matching criteria will be invited to enter the ensemble.
+
+- Utility Based
+The best knonw available component according to a utiltiy function.
+
+Trigger:: what motivates the formation of the ensemble
+- When components are discovered
+- In response to a request
+
+
+
+== Requirements
+
+=== Ensemble Formation
+
+- Components must advertise its state so another component "hosting" and ensemble can decise on "invinting it to the ensemble"
+- A coordinator must listen to advertisements 
+
+
+=== 
