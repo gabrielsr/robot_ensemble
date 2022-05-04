@@ -10,7 +10,7 @@ include::design/requirements.adoc[]
 include::design/design_decisions.adoc[]
 include::design/architecture.adoc[]
 // include::evaluation.adoc[]
-include::design/scenario.adoc[]
+include::design/scenarios.adoc[]
 
 == References
 
