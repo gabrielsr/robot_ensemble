@@ -1,5 +1,7 @@
-ros_ensemble
+ros_ensemble (in initial stages of development)
 ------------
+
+
 
 A Lightweight Ensembles-Based Component System Implementation for ROS based systems
 
